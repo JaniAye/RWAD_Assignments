@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 7</title>
+    <link rel="stylesheet" href="assests/normalize.css">
+    <style>
+        section{
+            height: 80vh;
+            width: 90vw;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+
+
+        }
+        section{
+            overflow: hidden;
+        }
+        div{
+            position: absolute;
+
+            height: 100%;
+            width: 100%;
+            animation: photoslider;
+            animation-duration: 15s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        div:nth-child(1){
+            left: 0;
+            background-image: url("assests/images/2109.jpg");
+            background-size: cover;
+            background-position: center;
+
+        }
+        div:nth-child(2){
+            left: 100%;
+            background-image: url("assests/images/batman-minimalism-poster-to.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        div:nth-child(3){
+            left: 200%;
+            background-image: url("assests/images/joker-arthur-fleek-e5.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        div:nth-child(4){
+            left: 300%;
+
+            background-image: url("assests/images/mac-os-sierra-color-splash-purple-do.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        div:nth-child(5){
+            left: 400%;
+            background-image: url("assests/images/marshmello-4k-do.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        
+        @keyframes photoslider {
+            0%{
+                transform: translateX(0%);
+            }
+            12.5%{
+                transform: translateX(-100%);
+            }
+            25%{
+                transform: translateX(-100%);
+            }
+            38%{
+                transform: translateX(-200%);
+            }
+            50%{
+                transform: translateX(-200%);
+            }
+            63%{
+                transform: translateX(-300%);
+            }
+            75%{
+                transform: translateX(-300%);
+            }
+            88%{
+                transform: translateX(-400%);
+            }
+            100%{
+                transform: translateX(-400%);
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+</body>
+</html>

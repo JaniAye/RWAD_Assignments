@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 8</title>
+    <link rel="stylesheet" href="assests/normalize.css">
+    <style>
+        section{
+            position: absolute;
+            border: 10px solid rgb(116, 109, 109);
+            height: 250px;
+            width: 250px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            border-radius: 100%;
+            border-top: 10px  solid red;
+
+            animation: clock;
+            /*transition: all 2s ease;*/
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+
+            animation-iteration-count: infinite;
+
+        }
+        div:nth-child(1){
+            position: absolute;
+            background-color: red;
+            width: 50%;
+            height: 10px;
+            left: 50%;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            transform: rotate(-45deg);
+            transform-origin: 0%;
+        }
+        div:nth-child(2){
+            position: absolute;
+            background-color: red;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            right: 9%;
+            top:9%;
+        }
+        /*section:hover{*/
+        /*    transition: all 2s;*/
+        /*    transform: rotate(360deg);*/
+        
+        /*}*/
+
+        @keyframes clock {
+           0%{
+               transform: rotate(0deg);
+           }
+            100%{
+               transform: rotate(360deg);
+           }
+        }
+        body{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+        <div></div>
+
+    </section>
+</body>
+</html>
